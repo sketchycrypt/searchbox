@@ -6,7 +6,6 @@ const userinput = document.getElementById("jsinput").value
 
 button.addEventListener('click', function() {
     window.location.href=`https://duckduckgo.com/?q=${userinput}&t=canonical`  
-    userinput = userinput.replace(/\s/g, '');
     
 });
 
