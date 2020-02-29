@@ -1,11 +1,10 @@
 window.addEventListener('load', () => {
+let userinput = document.getElementById('jsinput');
 const button = document.querySelector('.search-btn')
-const userinput = document.getElementById("jsinput").value
-//this puts underscores, doesnt work fyi
-
 
 button.addEventListener('click', function() {
-    window.location.href=`https://duckduckgo.com/?q=${userinput}&t=canonical`  
+
+    window.location.href=`https://duckduckgo.com/?q=${userinput.value}&t=canonical`  
     
 });
 
