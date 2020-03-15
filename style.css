@@ -1,7 +1,8 @@
 body{
     margin: 0;
     padding: 0;
-    background: #e84118;
+    background: #191716;
+    font-family: 'Open Sans', sans-serif;
 }
 .search-box{
     position: absolute;
@@ -14,15 +15,16 @@ body{
     padding: 10px;
 }
 .search-box > .search-txt{
-    width: 240px;
+    width: 460px;
     padding: 0 6px;
 }
 
-.search-box:hover > .search-btn{
+.search-btn:hover{
     background: white;
+    cursor: pointer;
 }
 .search-btn{
-    color: #e84118;
+    color: #009999;
     float: right;
     width: 40px;
     height: 40px;
@@ -42,4 +44,13 @@ body{
     font-size: 20px;
     line-height: 40px;
     width: 0px;
+}
+
+@media screen and (max-width: 800px) {
+
+  .search-box > .search-txt{
+    width: 280px;
+    padding: 0 6px;
+}  
+
 }
